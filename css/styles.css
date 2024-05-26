@@ -191,6 +191,7 @@ body{
     padding-top: 381px;
     padding-bottom: 40px;
     padding-left: 40px;
+    padding-right: 40px;
 }
 
 
@@ -201,6 +202,13 @@ body{
     letter-spacing: -0.03em;
     color: #fff;
     width: 484px;
+    margin-bottom: 32px;
+}
+
+.hero-button-container{
+    display: flex;
+    align-items: center;
+
 }
 
 .hero-btn {
@@ -212,9 +220,19 @@ body{
     background: #fd9222;
     cursor: pointer;
     border: none;
+    margin-right: 14px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,.hero-btn:focus {
+    background-color: #fcf1e0;
+    color: #fd9222;
 }
 
 .hero-haw-its-made {
+    transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 50ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 600;
     font-size: 14px;
     color: #fff;
@@ -224,10 +242,64 @@ body{
 
 }
 
+.hero-haw-its-made:hover,.hero-haw-its-made:focus{
+    color: #fd9222;
+    border-color: #fd9222;
+}
+
+.hero-scroll-container {
+    margin-left: auto;
+    display: flex;
+}
+
 .scroll-down {
-    
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.03em;
+    color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-scroll-vector-box {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background-color: #fff;
+    margin-left: 14px;
 }
 
 .icon-scroll {
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #fd9222;
 }
+
+.scroll-down:hover, .scroll-down:focus {
+    color: #fd9222;
+}
+
+.scroll-down:hover .hero-scroll-vector-box, .scroll-down:focus .hero-scroll-vector-box {
+    background-color: #fd9222;
+}
+
+.scroll-down:hover .icon-scroll, .scroll-down:focus .icon-scroll {
+    fill: #fff;
+}
+
+.hero-scroll-vector-box:hover, .hero-scroll-vector-box:focus {
+    background-color: #fd9222;
+}
+
+.hero-scroll-vector-box:hover .icon-scroll, .hero-scroll-vector-box:focus .icon-scroll {
+    fill: #fff;
+}
+
+/* -------------------------------------------------------------------------------------*/
+
+
